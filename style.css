@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.navbar a.register, .navbar a.login {
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.navbar a.register:hover, .navbar a.login:hover {
+  background-color: #666;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+header {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-simple-medical-running-doctor-structurepatienthospital-image_64640.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header h2 {
+  color: #000000;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.feature {
+  text-align: center;
+  padding: 20px;
+  margin: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.feature img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.feature a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.feature a:hover {
+  background-color: #666;
+}
+
+.testimonial {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 50px;
+}
+
+.testimonial h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.testimonial .author {
+  font-style: italic;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.articles {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.articles h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.article img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.article-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.article-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.article-content a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.article-content a:hover {
+  background-color: #666;
+}
+
+
+.consultation {
+  background-color: #403f55;
+  padding: 50px 0;
+}
+
+.consultation h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form textarea {
+  height: 200px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #666;
+}
+
+.about-us {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.about-us h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-us img {
+  width: 100%;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Booking */
+.booking {
+  background-color: #403f55;
+  padding: 50px 0;
+}
+
+.booking h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #666;
+}
+
+.payment {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.payment h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.payment p {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.payment ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.payment li {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Register */
+.register {
+  background-color: #4a44fa;
+  padding: 50px 0;
+}
+
+.register h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #666;
+}
+
+/* Login */
+.login {
+  background-color: #4a44fa;
+  padding: 50px 0;
+}
+
+.login h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #666;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
